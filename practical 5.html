@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Internship Application Form</title>
+</head>
+<body>
+
+    <h1>Internship Application</h1>
+
+    <form action="/submit_application" method="POST">
+
+        <!-- Personal Information -->
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="name">
+        <br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email">
+        <br><br>
+
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone">
+        <br><br>
+
+        <!-- Internship Details -->
+        <label for="position">Position Applied For:</label>
+        <input type="text" id="position" name="position">
+        <br><br>
+
+        <label for="start-date">Available Start Date:</label>
+        <input type="date" id="start-date" name="start_date">
+        <br><br>
+
+        <label for="duration">Preferred Duration:</label>
+        <select id="duration" name="duration">
+            <option value="1-month">1 Month</option>
+            <option value="3-months">3 Months</option>
+            <option value="6-months">6 Months</option>
+        </select>
+        <br><br>
+
+        <!-- Education Section -->
+        <label for="university">University Name:</label>
+        <input type="text" id="university" name="university">
+        <br><br>
+
+        <label for="degree">Degree Program:</label>
+        <input type="text" id="degree" name="degree">
+        <br><br>
+
+        <label for="graduation-year">Expected Graduation Year:</label>
+        <input type="number" id="graduation-year" name="graduation_year" min="2025">
+        <br><br>
+
+        <!-- Upload Resume -->
+        <label for="resume">Upload Resume:</label>
+        <input type="file" id="resume" name="resume">
+        <br><br>
+
+        <!-- Submit Button -->
+        <button type="submit">Submit Application</button>
+
+    </form>
+
+</body>
+</html>
