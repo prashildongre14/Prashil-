@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tribute Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+        }
+        .header {
+            background-color: #f78426;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+        .main-content {
+            padding: 20px;
+            margin: 20px;
+            background-color: white;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .main-content img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+        .section {
+            margin-bottom: 20px;
+        }
+        h2 {
+            color: #333;
+        }
+        p {
+            font-size: 18px;
+            line-height: 1.6;
+            color: #555;
+        }
+        .footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #333;
+            color: white;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <div class="header">
+        <h1>Tribute to Chhatrapati Shivaji Maharaj</h1>
+        <p>Celebrating their life and achievements</p>
+    </div>
+
+    <!-- Main Content -->
+    <div class="main-content">
+        <!-- Image Section -->
+        <div class="section">
+            <img src="data:image/jpeg;base64,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" alt="Image of [Person's Name]">
+        </div>
+
+        <!-- Biography Section -->
+        <div class="section">
+            <h2>Biography</h2>
+            <p>Chhatrapati Shivaji Maharaj (1630–1680) was the founder of the Maratha Empire and a renowned warrior and leader. Born in Shivneri Fort, Maharashtra, he began his military career by capturing forts at a young age. Shivaji’s guerrilla tactics and his strong defense against the Mughal Empire, led by Emperor Aurangzeb, were key to his success.
+
+                He was crowned Chhatrapati in 1674 and expanded his empire across western India. Shivaji developed a fair and efficient administration, established a strong navy, and promoted religious tolerance. Known for his leadership, bravery, and vision, Shivaji’s reign laid the foundation for the Maratha Empire, which continued to challenge Mughal power for years after his death on April 3, 1680.
+                
+                His legacy as a warrior, reformer, and protector of his people endures in Indian history.
+                
+                
+                
+                </p>
+        </div>
+
+        <!-- Accomplishments Section -->
+        <div class="section">
+            <h2>Accomplishments</h2>
+            <p>Chhatrapati Shivaji Maharaj was a visionary leader who founded the Maratha Empire and expanded it across western India. He is renowned for his innovative guerrilla warfare tactics, which enabled him to defeat much larger Mughal forces. Shivaji also established a powerful navy to protect the coastline and defend against foreign invasions. In 1674, he was crowned Chhatrapati, solidifying the Marathas as an independent power. His efficient administration included a fair revenue system, a disciplined military, and a focus on law and order. Shivaji promoted religious tolerance and ensured justice for all communities within his kingdom. He built over 300 forts to defend his territories and successfully resisted Mughal expansion, particularly from Emperor Aurangzeb. Beyond military and political accomplishments, Shivaji supported arts, culture, and social reforms, strengthening the Maratha identity and leaving a lasting legacy as one of India’s greatest rulers.</p>
+        </div>
+
+        <!-- Legacy Section -->
+        <div class="section">
+            <h2>Legacy</h2>
+            <p>Chhatrapati Shivaji Maharaj's legacy is that of a legendary warrior, visionary leader, and founder of the Maratha Empire. He is remembered for his innovative military tactics, establishment of a strong navy, and resistance against the Mughal Empire. His fair and progressive administration, religious tolerance, and promotion of justice and welfare left a lasting impact. Shivaji also fostered a strong Maratha identity, supporting arts, culture, and local traditions. His legacy continues to inspire pride, patriotism, and leadership, making him a revered figure in Indian history.</p>
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+    <div class="footer">
+        <p>&copy; 2025 Tribute Page - All Rights Reserved</p>
+    </div>
+
+</body>
+</html>
